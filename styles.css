@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1{
+  color: #ffffff;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  top: 0;
+  z-index: 100;
+}
+
+.left-column {
+  flex: 2;
+  padding: 40px;
+}
+
+.container-box { 
+  margin: 10px;
+}
+
+.right-column {
+  flex: 1;
+  padding: 20px;
+  align-self: flex-end;
+  text-align: right;
+  margin-right: 10px;
+}
+
+#logo {
+  font-family: 'Yeseva One', serif;
+  font-size: 33px;
+  color: #f3ba12;
+  font-weight: 500;
+}
+
+#header-links a{
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-right: 15px;
+  position: relative;
+}
+
+#header-links a:hover {
+  color: #7c9fa2;
+}
+
+#header-links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #7c9fa2;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+#header-links a:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+#tiktok {
+  width: 24px;
+  height: 25px;
+}
+
+svg {
+  fill: #ffffff;
+  padding: 8px;
+  transition: .5s;
+}
+
+svg:hover {
+  fill: #7c9fa2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  color: #ffffff;
+  padding: 40px;
+  font-size: 15px;
+}
+
+iframe {
+  width: 90%;
+  padding: 40px;
+}
+
+.main-body p {
+  text-align: center;
+}
+
+/* Center the items within the .mail-list */
+.mail-list {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+/* Style the input field */
+.mail-list input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 40px; /* Rounded edges */
+  margin: 5px;
+  width: 260px;
+  font-size: 16px;
+}
+
+/* Style the button */
+.mail-list button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #7c9fa2;
+  border: 2px solid #7c9fa2;
+  border-radius: 40px; /* Rounded edges */
+  margin: 5px;
+  cursor: pointer;
+  width: 108px;
+  transition: 0.5s;
+  font-size: 14px;
+}
+
+/* Add hover effect to the button */
+.mail-list button:hover {
+  background-color: #7c9fa2;
+  color: #ffffff;
+}
+
+.tipjar-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.tip-left {
+  flex: 1;
+  padding: 20px;
+}
+
+.tip-right {
+  flex: 1;
+  padding: 20px;
+  align-items: center;
+}
+
+h3 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.tip-right button, .tip-right a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tip-right a{
+  color: #7c9fa2;
+  padding-top: 10px;
+}
+
+.tip-right button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #7c9fa2;
+  border: 2px solid #7c9fa2;
+  border-radius: 40px; /* Rounded edges */
+  cursor: pointer;
+  width: 80%;
+  transition: 0.5s;
+  font-size: 14px;
+}
