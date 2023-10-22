@@ -288,8 +288,10 @@ ul {
 
   .right-column {
     align-items: center;
-    margin-right: 140px;
+    margin-right: 50px;
     margin-top: -49px;
+    width: 55%;
+    text-align: center;
   }
 
   .mail-list,
@@ -310,6 +312,10 @@ ul {
 
   .mobile-menu a {
     text-align: left;
+  }
+
+  p {
+    font-size: 20px;
   }
 }
 
