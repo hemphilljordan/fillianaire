@@ -6,10 +6,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index-menu.css">
     <title>fillianaire</title>
 </head>
 <body>
-  <header>
+  <header id="site_header">
     <div class="container">
         <div class="left-column">
             <div class="container-box">
@@ -33,11 +34,23 @@
           <a href="https://www.youtube.com/channel/UCQBaSoXet11u28DMg-S-32A"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
         </div>
     </div>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="join-email-list-here.html">Join Email List here!!</a></li>
+      </ul>
+    </div>
   </header>
 
   <div class="main-body">
     <img src="fillianaire-main.webp">
     <p>Fillianaire is an indie alt pop/rock artist. Having written and produced for artists like Selena Gomez and Demi Lovato, he’s currently focused on writing for his debut album. In the meantime, he’ll be releasing mixtapes of past demos and rough sketches.</p>
+    <div id="add-songs">
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/38aCorieKZmFh7nWbFRo2S?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4PNRi03ADyY0bBhZwxO9n8?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/32vpUab6hqXYjHXjuFek5S?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -46,11 +59,12 @@
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5rFhX6erd4aq2AmzUNpjrj?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/vJCAuAhBQoo?si=bdk1IgB1kUcLRsCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
 
     <p>Join the mailing list for all the fresh action!</p>
     <div class="mail-list">
-      <input type="text" placeholder="Your email">
-      <button>SIGN UP</button>
+      <input type="text" placeholder="Your email" id="emailInput">
+      <button id="sendEmail">SIGN UP</button>
     </div>
     <div class="tipjar-container">
       <div class="tip-left">
@@ -61,10 +75,11 @@
         <p>
           if what i do makes you laugh, cry, dance, think, or moves you in any way - feel free to share the love!
         </p>
-        <button>DONATE</button>
+        <button onclick="donate()">DONATE</button>
         <a href="#">Share this</a>
       </div>
     </div>
   </div>
+  <script src="admin.js"></script>
 </body>
 </html>
